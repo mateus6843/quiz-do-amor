@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Quiz do Amor 💘</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="hearts-bg"></div>
+
+<div class="container">
+  <h1 id="title"></h1>
+  <form id="quizForm">
+
+    <div class="question active" id="q1">
+      <label>Qual é o seu nome?</label>
+      <input type="text" id="nome" required autocomplete="off" />
+      <button type="button" onclick="nextQuestion(1)">Próximo</button>
+    </div>
+
+    <div class="question" id="q2">
+      <label>Quantos anos você tem?</label>
+      <input type="number" id="idade" required autocomplete="off" />
+      <button type="button" onclick="nextQuestion(2)">Próximo</button>
+    </div>
+
+    <div class="question" id="q3">
+      <label>Qual sua cor favorita?</label>
+      <input type="text" id="cor" required autocomplete="off" />
+      <button type="button" onclick="nextQuestion(3)">Próximo</button>
+    </div>
+
+    <div class="question" id="q4">
+      <label>Qual seu estilo musical favorito?</label>
+      <input type="text" id="musica" required autocomplete="off" />
+      <button type="button" onclick="nextQuestion(4)">Próximo</button>
+    </div>
+
+    <div class="question" id="q5">
+      <label>Qual seu signo?</label>
+      <input type="text" id="signo" required autocomplete="off" />
+      <button type="button" onclick="showResult()">Ver resultado</button>
+    </div>
+  </form>
+
+  <div id="loading" class="hidden">🔮 Analisando seu destino amoroso...</div>
+
+  <div id="result" class="hidden"></div>
+</div>
+
+<audio id="music" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg" />
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
