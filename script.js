@@ -1,5 +1,5 @@
 // Máquina de escrever no título
-const titleText = "Vamos descobrir seu destino amoroso 💘";
+const titleText = "Vamos descobrir seu próximo rolê";
 let i = 0;
 const titleEl = document.getElementById("title");
 
@@ -66,7 +66,7 @@ function showResult() {
     const resultEl = document.getElementById("result");
     resultEl.classList.remove("hidden");
 
-    const finalText = `${answers.nome}, você será namorada de `;
+    const finalText = `${answers.nome}, Não tem jeito, seu próximo role será no sábado no 360Gastro com o`;
     const mateusName = "Mateus Oliveira";
 
     resultEl.innerHTML = `<p>${finalText}<span id="mateusName"></span>! 😍</p>`;
