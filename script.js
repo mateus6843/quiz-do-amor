@@ -1,5 +1,5 @@
 // Máquina de escrever no título
-const titleText = "Vamos descobrir seu próximo role";
+const titleText = "Vamos descobrir quem é o amor da sua vida";
 let i = 0;
 const titleEl = document.getElementById("title");
 
