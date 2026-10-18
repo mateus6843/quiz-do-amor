@@ -66,7 +66,7 @@ function showResult() {
     const resultEl = document.getElementById("result");
     resultEl.classList.remove("hidden");
 
-    const finalText = `${answers.nome}, Não tem jeito, seu próximo role será no sábado no 360Gastro com o`;
+    const finalText = `${answers.nome}, Não tem jeito,o amor da sua vida é o`;
     const mateusName = "Mateus Oliveira";
 
     resultEl.innerHTML = `<p>${finalText}<span id="mateusName"></span>! 😍</p>`;
